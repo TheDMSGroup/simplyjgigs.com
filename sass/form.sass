@@ -1,0 +1,364 @@
+@import compass/css3
+
+$black: #000
+$blue: #2faadf
+$blue-slate: #e2e9eb
+$blue-slate-lt: #f0f4f5
+$gray: #9ea3a4
+
+$primary: $blue !default
+$primary-lt: lighten($primary, 15%) !default
+$primary-md: darken($primary, 10%) !default
+$primary-dk: darken($primary, 20%) !default
+
+// -------------------------- COMMON --------------------------------------------------
+
+// extendables
+.uppercase
+  text-transform: uppercase
+  letter-spacing: 1px
+
+// common
+body
+  font-family: Helvetica, Arial, sans-serif
+  background: white
+  color: #444
+  font-size: 14px
+  font-weight: lighter
+
+p, ul, li
+  color: #666
+  line-height: 1.75em
+
+blockquote
+  font-style: italic
+  color: #8f8f8f
+
+img
+  max-width: 100%
+
+li
+  line-height: 1.75em
+
+a
+  color: $primary
+  cursor: pointer
+  &:hover
+    color: $primary-md
+    text-decoration: none
+
+h1
+  font-size: 36px
+  font-weight: normal
+  margin-bottom: 10px
+
+h2
+  font-size: 28px
+  margin-bottom: 10px
+
+h3
+  font-size: 21px
+  margin-bottom: 10px
+
+h4
+  font-size: 16px
+  font-weight: bold
+
+select, input[type="text"]
+  border: 1px solid #ccc
+  border-radius: 3px
+  padding: 5px 10px
+  box-sizing: border-box
+  font-family: Montserrat, Arial, sans-serif
+  font-size: 16px
+
+.left
+  float: left
+
+.container
+  width: 100%
+  max-width: 100%
+  padding: 0 15px
+
+.container > div
+  padding-left: 10px
+  padding-right: 10px
+
+.content
+  > div
+    margin-bottom: 40px
+    clear: both
+    &:after
+      content: ""
+      clear: both
+      display: block
+
+select:-moz-focusring
+  outline: none
+  color: transparent
+  text-shadow: 0 0 0 #000
+
+.disclaimer
+  font-size: 13px
+  font-style: italic
+
+// header
+
+.header
+  background: white
+  color: white
+  padding-top: 15px
+  padding-bottom: 15px
+  text-align: center
+  overflow: hidden
+  .header-brand a
+    background-image: url('../images/simplygigs-logo.png')
+    background-repeat: no-repeat
+    display: block
+    float: left
+    margin: auto
+    width: 205px
+    height: 35px
+    text-indent: -999px
+    margin-right: 10px
+    background-size: 205px
+  .search-icon
+    float: right
+    .material-icons
+      font-size: 30px
+  p
+    color: $primary
+  a
+    color: white
+    &:hover
+      color: white
+  .rules
+    padding-top: 20px
+  #mark
+    max-width: 500px
+    float: left
+    overflow: hidden
+    padding-top: 20px
+    marquee
+      float: left
+      width: 300px
+    li
+      color: white
+      list-style: none
+      margin-right: 10px
+      display: inline
+      b
+        color: $primary
+    .recent
+      text-transform: uppercase
+      letter-spacing: 1px
+      color: $primary
+      font-weight: 600
+      display: inline
+      float: left
+      margin-right: 10px
+
+.footer
+  clear: both
+  overflow: auto
+  padding: 30px 60px
+  text-align: center
+  .footer-logo
+    width: 235px
+  p
+    color: #999
+    text-align: center
+
+// animated arrow
+.formio-component-fieldset.form-div
+  position: relative
+  padding-top: 50px
+
+
+//////////////////////////////////////  INDIVIDUAL PAGE STYLES  ///////////////////////////////////////
+
+
+// forms
+.form-banner
+  padding: 20px 60px
+  background: white url(../images/simplygigs-hero.jpg) no-repeat
+  background-size: cover
+  display: flex
+  align-items: center
+  margin-bottom: 30px
+  min-height: 400px
+  > div
+  h1
+    color: white
+    font-weight: normal
+    text-align: left
+    margin: 0
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.15)
+
+.form-container
+  background: white
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.15)
+  border-radius: 5px
+  .form-header
+    text-align: center
+    background: $primary
+    padding: 15px 10px
+    border-radius: 5px 5px 0 0
+    h2
+      color: white
+      font-weight: normal
+      font-size: 18px
+      margin: 0
+  .form-body
+    padding: 20px 30px
+  .form-footer
+    text-align: center
+    margin: 20px 0
+
+.job-summary
+  text-align: center
+  img
+    width: 12px
+    position: relative
+    top: -2px
+    margin-right: 5px
+  .location
+    color: #999
+
+// home
+.lead
+  color: $primary
+  text-align: center
+  width: 80%
+  max-width: 600px
+  margin: 20px auto
+
+
+// privacy
+
+#privacy
+  .body
+    background: white
+  h1
+    font-size: 48px
+    color: $primary
+    text-shadow: none
+  h2
+    color: $primary
+    font-weight: bold
+    border-bottom: 3px solid $primary
+    padding-bottom: 10px
+    margin: 30px 0
+    text-align: left
+
+//////////////////////////////////////  MEDIA QUERIES  ///////////////////////////////////////
+
+@media (max-width: 1200px)
+  .container
+    max-width: 100%
+
+//bootstrap breakpoint
+
+@media (min-width: 992px)
+  .body
+    padding: 30px
+  .container > div
+    padding-left: 60px
+    padding-right: 60px
+
+// Responsive: Landscape phone to desktop/tablet
+@media (max-width: 991px)
+  .header
+    #mark
+      display: none
+  .progress-container
+    text-align: center
+    padding-bottom: 10px
+    .progress-label
+      color: $primary
+    .progress
+      border: 1px solid #ddd
+
+@media (min-width: 700px)
+  .form-container
+    margin-top: -68px
+
+@media (max-width: 699px)
+  .form-banner
+    background-size: cover
+    display: inline-block
+    padding: 0 !important
+    h1
+      text-align: center
+      margin-bottom: 30px
+      margin-top: 30px
+
+// UP TO LANDSCAPE PHONE
+// ---------------------
+@media (max-width: 480px)
+  .container > div
+    padding-left: 15px
+    padding-right: 15px
+  .header-form
+    z-index: 999
+    position: absolute
+    background: rgba(0,0,0,1)
+    padding: 10px
+    margin-top: 60px
+    top: 0
+    border-radius: 5px
+    width: 100%
+    left: 0
+  h1
+    font-size: 28px
+  .form-banner
+    background-size: contain
+  .form-container
+    padding: 0
+    background-size: contain
+    margin-bottom: 20px
+    margin-left: -15px
+    margin-right: -15px
+    .form-body
+      padding: 15px
+  .body
+    padding-bottom: 10px
+    h2
+      margin-top: 30px
+  .card
+    margin-bottom: 20px
+  .lead
+    width: 100%
+  .footer
+    padding: 20px 0
+    p
+      color: #666
+      font-size: 11px
+      line-height: 14px
+  #thanks-page
+    .form-banner
+      background-size: 460px
+      border-bottom: none
+      margin-bottom: 0px
+    .form-container
+      padding-top: 20px
+      margin-bottom: 220px
+    .social-share
+      padding-top: 20px
+      .hashtag
+        display: none
+    .form-header
+      h1, h2
+        text-shadow: none
+    .footer
+      background: white
+  body#privacy
+    background: white
+    .body
+      display: block
+    h1
+      font-size: 32px
+    h2
+      font-size: 21px
+    .footer
+      background: none

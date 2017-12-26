@@ -1,0 +1,503 @@
+/* line 17, ../sass/form.sass */
+.uppercase {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* line 22, ../sass/form.sass */
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background: white;
+  color: #444;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+/* line 29, ../sass/form.sass */
+p, ul, li {
+  color: #666;
+  line-height: 1.75em;
+}
+
+/* line 33, ../sass/form.sass */
+blockquote {
+  font-style: italic;
+  color: #8f8f8f;
+}
+
+/* line 37, ../sass/form.sass */
+img {
+  max-width: 100%;
+}
+
+/* line 40, ../sass/form.sass */
+li {
+  line-height: 1.75em;
+}
+
+/* line 43, ../sass/form.sass */
+a {
+  color: #2faadf;
+  cursor: pointer;
+}
+/* line 46, ../sass/form.sass */
+a:hover {
+  color: #1d8dbe;
+  text-decoration: none;
+}
+
+/* line 50, ../sass/form.sass */
+h1 {
+  font-size: 36px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+/* line 55, ../sass/form.sass */
+h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+/* line 59, ../sass/form.sass */
+h3 {
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+/* line 63, ../sass/form.sass */
+h4 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* line 67, ../sass/form.sass */
+select, input[type="text"] {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* line 75, ../sass/form.sass */
+.left {
+  float: left;
+}
+
+/* line 78, ../sass/form.sass */
+.container {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 15px;
+}
+
+/* line 83, ../sass/form.sass */
+.container > div {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* line 88, ../sass/form.sass */
+.content > div {
+  margin-bottom: 40px;
+  clear: both;
+}
+/* line 91, ../sass/form.sass */
+.content > div:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/* line 96, ../sass/form.sass */
+select:-moz-focusring {
+  outline: none;
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+/* line 101, ../sass/form.sass */
+.disclaimer {
+  font-size: 13px;
+  font-style: italic;
+}
+
+/* line 107, ../sass/form.sass */
+.header {
+  background: white;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  overflow: hidden;
+}
+/* line 114, ../sass/form.sass */
+.header .header-brand a {
+  background-image: url("../images/simplygigs-logo.png");
+  background-repeat: no-repeat;
+  display: block;
+  float: left;
+  margin: auto;
+  width: 205px;
+  height: 35px;
+  text-indent: -999px;
+  margin-right: 10px;
+  background-size: 205px;
+}
+/* line 125, ../sass/form.sass */
+.header .search-icon {
+  float: right;
+}
+/* line 127, ../sass/form.sass */
+.header .search-icon .material-icons {
+  font-size: 30px;
+}
+/* line 129, ../sass/form.sass */
+.header p {
+  color: #2faadf;
+}
+/* line 131, ../sass/form.sass */
+.header a {
+  color: white;
+}
+/* line 133, ../sass/form.sass */
+.header a:hover {
+  color: white;
+}
+/* line 135, ../sass/form.sass */
+.header .rules {
+  padding-top: 20px;
+}
+/* line 137, ../sass/form.sass */
+.header #mark {
+  max-width: 500px;
+  float: left;
+  overflow: hidden;
+  padding-top: 20px;
+}
+/* line 142, ../sass/form.sass */
+.header #mark marquee {
+  float: left;
+  width: 300px;
+}
+/* line 145, ../sass/form.sass */
+.header #mark li {
+  color: white;
+  list-style: none;
+  margin-right: 10px;
+  display: inline;
+}
+/* line 150, ../sass/form.sass */
+.header #mark li b {
+  color: #2faadf;
+}
+/* line 152, ../sass/form.sass */
+.header #mark .recent {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #2faadf;
+  font-weight: 600;
+  display: inline;
+  float: left;
+  margin-right: 10px;
+}
+
+/* line 161, ../sass/form.sass */
+.footer {
+  clear: both;
+  overflow: auto;
+  padding: 30px 60px;
+  text-align: center;
+}
+/* line 166, ../sass/form.sass */
+.footer .footer-logo {
+  width: 235px;
+}
+/* line 168, ../sass/form.sass */
+.footer p {
+  color: #999;
+  text-align: center;
+}
+
+/* line 173, ../sass/form.sass */
+.formio-component-fieldset.form-div {
+  position: relative;
+  padding-top: 50px;
+}
+
+/* line 182, ../sass/form.sass */
+.form-banner {
+  padding: 20px 60px;
+  background: white url(../images/simplygigs-hero.jpg) no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  min-height: 400px;
+}
+/* line 191, ../sass/form.sass */
+.form-banner h1 {
+  color: white;
+  font-weight: normal;
+  text-align: left;
+  margin: 0;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+}
+
+/* line 198, ../sass/form.sass */
+.form-container {
+  background: white;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+/* line 202, ../sass/form.sass */
+.form-container .form-header {
+  text-align: center;
+  background: #2faadf;
+  padding: 15px 10px;
+  border-radius: 5px 5px 0 0;
+}
+/* line 207, ../sass/form.sass */
+.form-container .form-header h2 {
+  color: white;
+  font-weight: normal;
+  font-size: 18px;
+  margin: 0;
+}
+/* line 212, ../sass/form.sass */
+.form-container .form-body {
+  padding: 20px 30px;
+}
+/* line 214, ../sass/form.sass */
+.form-container .form-footer {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* line 218, ../sass/form.sass */
+.job-summary {
+  text-align: center;
+}
+/* line 220, ../sass/form.sass */
+.job-summary img {
+  width: 12px;
+  position: relative;
+  top: -2px;
+  margin-right: 5px;
+}
+/* line 225, ../sass/form.sass */
+.job-summary .location {
+  color: #999;
+}
+
+/* line 229, ../sass/form.sass */
+.lead {
+  color: #2faadf;
+  text-align: center;
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+/* line 240, ../sass/form.sass */
+#privacy .body {
+  background: white;
+}
+/* line 242, ../sass/form.sass */
+#privacy h1 {
+  font-size: 48px;
+  color: #2faadf;
+  text-shadow: none;
+}
+/* line 246, ../sass/form.sass */
+#privacy h2 {
+  color: #2faadf;
+  font-weight: bold;
+  border-bottom: 3px solid #2faadf;
+  padding-bottom: 10px;
+  margin: 30px 0;
+  text-align: left;
+}
+
+@media (max-width: 1200px) {
+  /* line 257, ../sass/form.sass */
+  .container {
+    max-width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  /* line 263, ../sass/form.sass */
+  .body {
+    padding: 30px;
+  }
+
+  /* line 265, ../sass/form.sass */
+  .container > div {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media (max-width: 991px) {
+  /* line 272, ../sass/form.sass */
+  .header #mark {
+    display: none;
+  }
+
+  /* line 274, ../sass/form.sass */
+  .progress-container {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  /* line 277, ../sass/form.sass */
+  .progress-container .progress-label {
+    color: #2faadf;
+  }
+  /* line 279, ../sass/form.sass */
+  .progress-container .progress {
+    border: 1px solid #ddd;
+  }
+}
+@media (min-width: 700px) {
+  /* line 283, ../sass/form.sass */
+  .form-container {
+    margin-top: -68px;
+  }
+}
+@media (max-width: 699px) {
+  /* line 287, ../sass/form.sass */
+  .form-banner {
+    background-size: cover;
+    display: inline-block;
+    padding: 0 !important;
+  }
+  /* line 291, ../sass/form.sass */
+  .form-banner h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 480px) {
+  /* line 299, ../sass/form.sass */
+  .container > div {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* line 302, ../sass/form.sass */
+  .header-form {
+    z-index: 999;
+    position: absolute;
+    background: black;
+    padding: 10px;
+    margin-top: 60px;
+    top: 0;
+    border-radius: 5px;
+    width: 100%;
+    left: 0;
+  }
+
+  /* line 312, ../sass/form.sass */
+  h1 {
+    font-size: 28px;
+  }
+
+  /* line 314, ../sass/form.sass */
+  .form-banner {
+    background-size: contain;
+  }
+
+  /* line 316, ../sass/form.sass */
+  .form-container {
+    padding: 0;
+    background-size: contain;
+    margin-bottom: 20px;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  /* line 322, ../sass/form.sass */
+  .form-container .form-body {
+    padding: 15px;
+  }
+
+  /* line 324, ../sass/form.sass */
+  .body {
+    padding-bottom: 10px;
+  }
+  /* line 326, ../sass/form.sass */
+  .body h2 {
+    margin-top: 30px;
+  }
+
+  /* line 328, ../sass/form.sass */
+  .card {
+    margin-bottom: 20px;
+  }
+
+  /* line 330, ../sass/form.sass */
+  .lead {
+    width: 100%;
+  }
+
+  /* line 332, ../sass/form.sass */
+  .footer {
+    padding: 20px 0;
+  }
+  /* line 334, ../sass/form.sass */
+  .footer p {
+    color: #666;
+    font-size: 11px;
+    line-height: 14px;
+  }
+
+  /* line 339, ../sass/form.sass */
+  #thanks-page .form-banner {
+    background-size: 460px;
+    border-bottom: none;
+    margin-bottom: 0px;
+  }
+  /* line 343, ../sass/form.sass */
+  #thanks-page .form-container {
+    padding-top: 20px;
+    margin-bottom: 220px;
+  }
+  /* line 346, ../sass/form.sass */
+  #thanks-page .social-share {
+    padding-top: 20px;
+  }
+  /* line 348, ../sass/form.sass */
+  #thanks-page .social-share .hashtag {
+    display: none;
+  }
+  /* line 351, ../sass/form.sass */
+  #thanks-page .form-header h1, #thanks-page .form-header h2 {
+    text-shadow: none;
+  }
+  /* line 353, ../sass/form.sass */
+  #thanks-page .footer {
+    background: white;
+  }
+
+  /* line 355, ../sass/form.sass */
+  body#privacy {
+    background: white;
+  }
+  /* line 357, ../sass/form.sass */
+  body#privacy .body {
+    display: block;
+  }
+  /* line 359, ../sass/form.sass */
+  body#privacy h1 {
+    font-size: 32px;
+  }
+  /* line 361, ../sass/form.sass */
+  body#privacy h2 {
+    font-size: 21px;
+  }
+  /* line 363, ../sass/form.sass */
+  body#privacy .footer {
+    background: none;
+  }
+}
